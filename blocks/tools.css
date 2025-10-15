@@ -1,0 +1,7 @@
+.tools__list {
+    list-style-type: none;
+}
+
+.tools__img {
+    max-width: 50vh;
+}

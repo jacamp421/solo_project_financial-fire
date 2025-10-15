@@ -1,0 +1,67 @@
+<!-- ✅ Streamlined User Input Variables (Post-Cleanup)
+🧍 Personal Info
+Variable	Type	Required	Notes
+current_age	Number	✅ Yes	Starting point for calculations
+retirement_age	Number	✅ Yes	When the user wants to retire
+life_expectancy	Number	Optional (default: 80)	Can be hidden or defaulted silently
+💵 Savings & Income
+Variable	Type	Required	Notes
+current_savings	Number ($)	✅ Yes	Total saved toward retirement so far
+monthly_income	Number ($)	✅ Yes	Use this instead of annual income for flexibility
+monthly_savings	Number ($)	✅ Yes	How much they currently invest/save each month
+savings_account_type	Option (dropdown)	Optional	Could be “Roth IRA”, “Brokerage”, “401(k)”, etc.
+💸 Expenses
+Variable	Type	Required	Notes
+monthly_expenses	Number ($)	✅ Yes	In today’s dollars
+post_retirement_expense_change	Option (slider/dropdown)	Optional	“Plan to spend more, same, or less in retirement”
+📈 Investment & Inflation Assumptions
+Variable	Type	Required	Notes
+expected_annual_return	Number (%)	✅ Yes or default (e.g. 7%)	Pre-inflation return (e.g. from index funds)
+inflation_rate	Number (%)	Optional (default: 3%)	For real value adjustments
+safe_withdrawal_rate	Number (%)	Optional (default: 4%)	Could be fixed or editable by advanced users
+🪙 Roth IRA Contributions
+Variable	Type	Required	Notes
+use_roth_ira	Toggle	Optional	“Do you plan to max out a Roth IRA?”
+roth_ira_start_age	Number	Optional	Used if they toggle Roth IRA on
+roth_ira_annual_contribution	Number	Optional (default: $7,000)	Can be auto-filled with current IRS limit
+🧾 Optional Future Toggles (Still Simple, but Not Required Now)
+Variable	Type	Notes
+include_healthcare_costs	Toggle	Could estimate a flat $ per year or leave out for now
+home_owner_in_retirement	Yes/No	Could adjust projected expenses
+🧰 Summary of Input Categories (Simplified)
+
+Personal Info
+
+Current Age
+
+Retirement Age
+
+Financial Status
+
+Current Savings
+
+Monthly Income
+
+Monthly Savings
+
+Lifestyle
+
+Monthly Expenses
+
+(Optional) Retirement Spending Plan
+
+Assumptions
+
+Expected Return Rate
+
+Inflation Rate (default: 3%)
+
+Safe Withdrawal Rate (default: 4%)
+
+Roth IRA (Optional)
+
+Toggle On/Off
+
+Contribution Start Age
+
+Annual Contribution Amount -->

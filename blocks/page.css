@@ -1,4 +1,13 @@
 .page {
     background-color: #121212;
     color: lightgray;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+    text-align: center;
+    list-style-type: none;
 }

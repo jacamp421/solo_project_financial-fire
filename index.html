@@ -24,21 +24,21 @@
     <div class="tools">
     <h1 class = "tools__header header">Tools!</h1>
     <p class = "tools__subheader">Here are useful tools you can use. I have no ties to these companies; I personally use them because of their usefulness, and I believe you should too!</p>
-    <a href="https://participant.empower-retirement.com/participant/#/sfd-login?accu=Empower" class = "tools__link">Empower</a>
+    <a href="https://participant.empower-retirement.com/participant/#/sfd-login?accu=Empower" class = "tools__link"><img src="./images/empower.png" alt="Empower" class = "tools__img"></a>
     <p class="tools__paragraph">Empower is a personal finance app that helps users track spending, set financial goals, and manage investments with automated tools and personalized insights.</p>
-    <a href="https://www.fidelity.com/" class = "tools_link">Fidelity</a>
+    <a href="https://www.fidelity.com/" class = "tools_link"><img src="./images/fidelity.jpg" class = "tools__img" alt="Fidelity"></a>
     <p class="tools__paragraph">Fidelity is one of the largest and most reputable financial institutions in the U.S., offering a wide range of services including brokerage accounts, retirement planning, robo-advisors (like Fidelity Go), and full-service wealth management. It's known for:
-      <ul>
-        <li>
+      <ul class = "tools__list">
+        <li class="tools__list-item">
           Low-cost index funds and ETFs
         </li>
-        <li>
+        <li class="tools__list-item">
           No account minimums for many services
         </li>
-        <li>
+        <li class="tools__list-item">
           Strong research tools and customer support
         </li>
-        <li>
+        <li class="tools__list-item">
           Flexible investing options (stocks, bonds, mutual funds, etc.)
         </li>
       </ul>
@@ -51,36 +51,36 @@
 In Robert Kiyosaki’s world (from Rich Dad Poor Dad), assets aren’t just things you own — they’re things that generate income or grow in value over time.</p>
 <h2 class = "info__subheader">🟩 Real Assets (According to Kiyosaki)</h2>
 <p class="info__paragraph">These are examples of what he considers true assets:</p>
-<ul>
-  <li>
+<ul class = "info__list">
+  <li class = "info__list-item">
 🏠 Rental properties — generate passive income
   </li>
-   <li>
+   <li class = "info__list-item">
    📈 Stocks / dividends — give you regular payouts 
   </li>
-   <li>
+   <li  class = "info__list-item">
     🧠 Businesses you own — earn money without trading time
   </li>
-   <li>
+   <li  class = "info__list-item">
     💎 Gold, silver, raw materials — hold value as the dollar declines
   </li>
-   <li>
+   <li  class = "info__list-item">
     💻 Intellectual property — like books, patents, or digital products
   </li>
 </ul>
 <h2 class="info__subheader">🟥 What’s NOT an Asset? (Even if it looks like one)</h2> 
 <p class="info__paragraph">Kiyosaki says many people are fooled into thinking certain things are assets when they’re actually liabilities:</p>
-<ul>
-  <li>
+<ul class ="info__list">
+  <li class ="info__list-item">
 🚗 Cars — lose value, cost money to maintain
-  </li>
-    <li>
+  </li class ="info__list-item">
+    <li class ="info__list-item">
     🏡 Your personal home — doesn’t put cash in your pocket
   </li>
-    <li>
+    <li class ="info__list-item">
     🎓 Expensive degrees — unless they generate a return
   </li>
-    <li>
+    <li class ="info__list-item">
     💳 Credit cards / consumer debt — drain your income
   </li>
 </ul>
@@ -89,5 +89,62 @@ In Robert Kiyosaki’s world (from Rich Dad Poor Dad), assets aren’t just thin
 <p class="info__paragraph">Your job on the path to financial freedom (and FIRE)?
 Stack real assets. Let them pay for your lifestyle.</p>
     </div>
+    <h1>FIRE Calculator</h1>
+  
+  <form id="fire-form">
+    <label>
+      Current Age:
+      <input type="number" id="current-age" required />
+    </label>
+    <br />
+
+    <label>
+      Retirement Age:
+      <input type="number" id="retirement-age" required />
+    </label>
+    <br />
+
+    <label>
+      Current Savings ($):
+      <input type="number" id="current-savings" required />
+    </label>
+    <br />
+
+    <label>
+      Monthly Income ($):
+      <input type="number" id="monthly-income" required />
+    </label>
+    <br />
+
+    <label>
+      Monthly Savings ($):
+      <input type="number" id="monthly-savings" required />
+    </label>
+    <br />
+
+    <label>
+      Monthly Expenses ($):
+      <input type="number" id="monthly-expenses" required />
+    </label>
+    <br />
+
+    <label>
+      Expected Annual Return (%) [default: 7]:
+      <input type="number" id="annual-return" placeholder="7" />
+    </label>
+    <br />
+
+    <label>
+      Inflation Rate (%) [default: 3]:
+      <input type="number" id="inflation-rate" placeholder="3" />
+    </label>
+    <br />
+
+    <button type="submit">Calculate FIRE</button>
+  </form>
+
+  <div id="results"></div>
+
+  <script src="./script/index.js"></script>
   </body>
 </html>
